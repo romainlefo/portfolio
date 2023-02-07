@@ -49,11 +49,14 @@ header{
 .about_me{
   
     width: 80%;
-    height: 300px;
+    height: 400px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
-    
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: linear-gradient(to left, #5a5454, #161616);
 
     
 }
@@ -64,16 +67,10 @@ header{
 .main{
     display: flex;
     flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
 }
-.about_text{
-    float: right;
-    margin: auto;
-    display:flex;
-    justify-content: center;
-    
-    border: 1px solid;
 
-}
 #img_me{
     width: 200px;
     height: 200px;
@@ -81,6 +78,7 @@ header{
     border-radius: 100px;
     flex-direction: row;
     margin-left: 20px;
+    margin-right: 10px;
     margin-top: 10px;
     border: 1px solid;
 }
@@ -114,10 +112,20 @@ header{
     text-decoration: underline;
     
 }
-.soft-skills{
-    border: 1px solid;
+.container_double{
+  
     width: 80%;
     height: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.soft-skills{
+   
+    width: 80%;
+    height: 350px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
@@ -126,10 +134,21 @@ header{
     text-decoration: underline;
     
 }
-.langues{
+.soft_text{
+    margin-left: 15px;
+    padding-left: 0px;
     border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: #181616;
+}
+.langues{
+  
     width: 80%;
-    height: 300px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
@@ -138,9 +157,22 @@ header{
     text-decoration: underline;
     
 }
+.langue_text{
+    margin-left: 15px;
+    padding-left: 0px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: #181616;
+    height: 105px;
+}
 
 .interet_losirs{
-    border: 1px solid;
+    
     width: 80%;
     height: 300px;
     margin-bottom: 10px;
@@ -151,19 +183,23 @@ header{
     text-decoration: underline;
     
 }
-
-.contact{
+.loisirs_text{
+    margin: 15px;
+    padding: 0px;
     border: 1px solid;
-    width: 80%;
-    height: 300px;
-    margin-bottom: 10px;
-    padding-top: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    color: #181616;
+    height: 200px;
+    width: 520px;
+
 }
-.contact h2{
-    text-decoration: underline;
-    
-}
+
+
 nav{
     margin: 0px;
     margin-top: 0px;

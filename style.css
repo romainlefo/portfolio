@@ -16,11 +16,13 @@ header{
     justify-content: center;
     align-items: center;
     font-family: "PT Sans Narrow";
+    width: 100%;
     background-image: url("https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    max-height: 750px;
-    height: 750px;
+    max-height: 800px;
+    height: 770px;
    
 }
+
 
 .button {
     border: 2px solid;
@@ -87,7 +89,7 @@ header{
 .competences{
     border: 1px solid;
     width: 80%;
-    height: 300px;
+    height: 600px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
@@ -98,7 +100,156 @@ header{
     
 }
 
-
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+    float: left;
+    margin: 10px;
+}
+.car::after{
+    width: 80%;
+    height: 20%;
+    display: block;
+    white-space: pre;
+    font-size: 1rem;
+    color: aliceblue;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.car:hover{
+    box-shadow: 0 0 0 5px inset, 0 0 5px #0000000f, 0 0 10px #0000000f inset;
+    opacity: 1;
+    cursor: pointer;
+}
+.card:hover::after{
+    opacity: 0;
+    transition : 0.5s ;
+}
+.first_row{
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+}
+.second_row{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#html{
+    color: #ea71537f    ;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#html:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png);
+    background-size: cover;
+    
+}
+#html::after{
+    content: 'HTML';
+    color: white;
+}
+#css{
+    color: #69a7da7d;
+    margin-right: 30px;
+}
+#css:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png);
+    background-size: cover;
+}
+#css::after{
+    content: 'CSS';
+    color: white;
+}
+#javascript{
+    color: #f1cf0e61;
+    margin-right: 30px;
+}
+#javascript:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_plain_logo_icon_146454.png);
+    background-size: cover;
+}
+#javascript::after{
+    content: 'JavaScript';
+    color: white;
+}
+#python{
+    color: #919e633c;
+    margin-right: 30px;
+}
+#python:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_python_icon_130221.png);
+    background-size: cover;
+}
+#python::after{
+    content: 'Python';
+    color: white;
+}
+#mysql{
+    color: #586e6b00;
+}
+#mysql:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/512/PNG/512/dbs-mysql_icon-icons.com_50909.png);
+    background-size: cover;
+}
+#mysql::after{
+    content: 'Mysql';
+    color: white;
+}
+#c{
+    color: #8a1eb551;
+}
+#c:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2148/PNG/512/c_icon_132529.png);
+    background-size: cover;
+}
+#c::after{
+    content: 'Langage C / C++';
+    color: white;
+}
+#vs_code{
+    color: #4e1eb551;
+}
+#vs_code:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png);
+    background-size: cover;
+}
+#vs_code::after{
+    content: 'VS code';
+    color: white;
+}
+#linux{
+    color: #47471751;
+}
+#linux:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/195/PNG/256/OS_Linux_23399.png);
+    background-size: cover;
+}
+#linux::after{
+    content: 'Linux';
+    color: white;
+}
+#office{
+    color: #926c1c51;
+}
+#office:hover{
+    background-image: url(https://cdn.icon-icons.com/icons2/1826/PNG/512/4202103logomicrosoftmsofficesocialsocialmedia-115585_115716.png);
+    background-size: cover;
+}
+#office::after{
+    content: 'Pack Office';
+    color: white;
+}
 
 .formation{
     border: 1px solid;
@@ -195,7 +346,7 @@ header{
     background-color: white;
     color: #181616;
     height: 200px;
-    width: 520px;
+
 
 }
 
@@ -238,8 +389,7 @@ nav a:hover{
 
 footer{
     width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
+    height: 350px;
     background-color: #181616;
 }
 

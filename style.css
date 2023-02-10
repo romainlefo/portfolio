@@ -76,11 +76,15 @@ header{
     text-decoration: underline;
     
 }
+.about_me_bis{
+    box-shadow: 0 5px 10px 0 #161616;
+}
 .main{
     display: flex;
     flex-direction: row;
     text-align: justify;
     justify-content: space-between;
+    
 }
 
 #img_me{
@@ -116,7 +120,7 @@ header{
     align-items: center;
     width: 200px;
     height: 200px;
-    box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+    box-shadow: 0 0 0 100px inset, 0 0 5px ;
     float: left;
     margin: 10px;
     border-radius: 20px;
@@ -204,11 +208,11 @@ header{
     background-size: cover;
 }
 #python::after{
-    content: 'Python';
+    content: 'PYTHON';
     color: white;
 }
 #mysql{
-    color: #586e6b00;
+    color: #37c2ad4c;
     
 }
 #mysql:hover{
@@ -228,7 +232,7 @@ header{
     background-size: cover;
 }
 #c::after{
-    content: 'Langage C / C++';
+    content: 'LANGAGE C / C++';
     color: white;
 }
 #vs_code{
@@ -240,7 +244,7 @@ header{
     background-size: cover;
 }
 #vs_code::after{
-    content: 'VS code';
+    content: 'VS CODE';
     color: white;
 }
 #linux{
@@ -252,7 +256,7 @@ header{
     background-size: cover;
 }
 #linux::after{
-    content: 'Linux';
+    content: 'LINUX';
     color: white;
 }
 #office{
@@ -264,7 +268,7 @@ header{
     background-size: cover;
 }
 #office::after{
-    content: 'Pack Office';
+    content: 'PACK OFFICE';
     color: white;
 }
 

@@ -310,9 +310,8 @@ header{
    overflow-x: scroll;
    scroll-snap-type: x mandatory;
    max-width: 60%;
-  border: 1px solid black;
   border-radius: 15px;
-  box-shadow: 0 5px 10px 0 #161616;
+  margin-bottom: 100px;
 }
 
 
@@ -328,8 +327,8 @@ header{
  
   }
  .slide:hover .formation_content{
-    height: 700px;
-    max-height: 750px;
+    height: 350px;
+    max-height: 400px;
     background-image: none;
     border-radius:15px ;
     
@@ -398,18 +397,21 @@ header{
     margin-bottom: 10px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 500px;
 }
 .soft-skills{
-   
     width: 80%;
     height: 350px;
     max-height: 400px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
 }
 .soft-skills h2{
     
@@ -419,7 +421,6 @@ header{
 .soft_text{
     margin-left: 15px;
     padding-left: 0px;
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -432,8 +433,8 @@ header{
 }
 
 .card_soft{
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 250px;
     max-width: 300px;
     max-height: 350px;
     background: linear-gradient(to left, #5a5454, #252323);
@@ -458,7 +459,7 @@ header{
     width: 80%;
     margin-bottom: 10px;
     padding-top: 50px;
-    height: 450px;
+    height: 300px;
     max-height: 450px;
    
 }
@@ -466,7 +467,8 @@ header{
     display: flex;
     justify-content: center ;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
 }
 .langues h2{
     text-decoration: underline;
@@ -479,7 +481,7 @@ header{
    border-radius:20px  ;
    background: linear-gradient(to left, #5a5454, #252323);
    cursor: pointer;
-   width: 350px;
+   width: 200px;
    max-width: 350px;
    height: 250px;
    max-height: 300px;

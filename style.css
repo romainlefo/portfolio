@@ -41,19 +41,20 @@ header{
     transition: all 0.4s;
 }
 .container{
-    border: 1px solid;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
-    
+    font-size: 20px;
 }
 .about_me_bis{
     border: 50px solid;
     width: 80%;
     height: 400px;
+    max-height: 400px;
     margin-bottom: 10px;
     text-align: center;
     padding-right: 20px;
@@ -67,6 +68,7 @@ header{
     
     width: 80%;
     height: 500px;
+    max-height: 500px;
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
@@ -74,7 +76,7 @@ header{
     padding-right: 20px;
     display: flex;
     justify-content: center;   
-    border: 1px solid;
+    
 }
 .about_me_bis h2{
     text-decoration: underline;
@@ -93,7 +95,9 @@ header{
 
 #img_me{
     width: 200px;
+    max-width: 250px;
     height: 200px;
+    max-height: 250px;
     display: flex;
     border-radius: 100px;
     flex-direction: row;
@@ -108,10 +112,11 @@ header{
     
     width: 80%;
     height: 600px;
+    max-height: 650px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
-    border: 1px solid;
+   
 }
 .competences h2{
     text-decoration: underline;
@@ -123,6 +128,8 @@ header{
     justify-content: center;
     align-items: center;
     width: 200px;
+    max-width: 250px;
+    max-height: 250px;
     height: 200px;
     box-shadow: 0 0 0 100px inset, 0 0 5px ;
     float: left;
@@ -134,7 +141,6 @@ header{
     height: 20%;
     display: block;
     white-space: pre;
-    font-size: 1rem;
     color: aliceblue;
     background: #333;
     display: flex;
@@ -277,9 +283,10 @@ header{
 }
 
 .formation{
-    border: 1px solid;
+    
     width: 100%;
     height: 1000px;
+    max-height: 1000px;
     margin-bottom: 10px;
     padding-top: 50px;
     display: flex;
@@ -301,13 +308,15 @@ header{
    overflow-x: scroll;
    scroll-snap-type: x mandatory;
    max-width: 60%;
-  
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 0 #161616;
 }
 
 
   .formation_content{
   color: white;
-  font-size: 20px;
+ 
   text-align: center;
   overflow: hidden;
   width: 100%;
@@ -318,6 +327,7 @@ header{
   }
  .slide:hover .formation_content{
     height: 700px;
+    max-height: 750px;
     background-image: none;
     border-radius:15px ;
     
@@ -339,7 +349,7 @@ header{
   }*/
 
 .slide{
-    
+    padding-top: 50%;
     position: relative;
     width: 450px;
     max-width : 500px;
@@ -363,7 +373,9 @@ header{
 .carousel .slide .image{
   position : relative;
   width : 350px;
+  max-width: 400px;
   height : 250px;
+  max-height: 300px;
   top : -10%;
   left: 100px;
   
@@ -377,10 +389,10 @@ header{
 
 
 .container_double{
-    border: 1px solid;
     margin-top: 100px;
     width: 100%;
     height: 300px;
+    max-height: 350px;
     margin-bottom: 10px;
     text-align: center;
     display: flex;
@@ -392,6 +404,7 @@ header{
    
     width: 80%;
     height: 350px;
+    max-height: 400px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
@@ -413,7 +426,7 @@ header{
     color: whitesmoke;
 }
  .card_soft p{
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .card_soft{
@@ -492,13 +505,13 @@ header{
 .interet_losirs{
     margin-top: 200px;
     width: 80%;
-    height: 300px;
     margin-bottom: 10px;
     padding-top: 50px;
     text-align: center;
     justify-content: center;
     height: 500px;
-    border: 1px solid;
+    max-height: 500px;
+  
     
     
 }
@@ -508,22 +521,22 @@ header{
 }
 .loisirs_text{
     position : relative;
-    width : 1100px;
     display : flex;
     align-items : center;
     justify-content : center;
     padding : 30px;  
     width: 80%;
     margin-left: 150px;
-    border: 1px solid;
+
     
     
 }
 .loisirs_text  .card_loisirs{
     position: relative;
     max-width : 300px;
-    width: 350px;
-    height : 150px;  
+    width: 300px;
+    height : 150px;
+    max-height:200px ;  
     background: linear-gradient(to left, #5a5454, #161616);
     margin : 30px 10px;
     padding : 20px 15px;
@@ -535,12 +548,15 @@ header{
 }
 .loisirs_text .card_loisirs:hover{
     height : 300px;  
+    max-height: 350px;
   
 }
 .loisirs_text .card_loisirs .image{
   position : relative;
   width : 200px;
+  max-width: 250px;
   height : 200px;
+  max-height: 250px;
   top : -40%;
   left: 8px;
   z-index : 1;
@@ -582,6 +598,7 @@ nav{
     text-align: center;
     padding-top: 23px;
     height: 35px;
+    max-height: 35px;
     position: sticky;
     top:0%;
     background-color: #1b1818;
@@ -592,6 +609,7 @@ nav:hover{
     background-color: #1b1818;
     opacity: 0.5;
     height: 38px;
+    max-height: 38px;
 
 }
 
@@ -611,6 +629,7 @@ footer{
     margin-top: 100px;
     width: 100%;
     height: 350px;
+    max-height: 400px;
     background-color: #181616;
 }
 

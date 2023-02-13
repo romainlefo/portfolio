@@ -280,7 +280,7 @@ header{
     border: 1px solid;
     width: 80%;
     max-height: 900%;
-    height: 550px;
+    height: 750px;
     margin-bottom: 10px;
     padding-top: 50px;
     display: flex;
@@ -293,6 +293,8 @@ header{
     
 }
 .carousel{
+    padding-top: 100px;
+    position: relative;
    display: flex;
    flex-direction: row;
    overflow-x: scroll;
@@ -308,25 +310,33 @@ header{
     height: 400px;
     display: flex;
     justify-content: center;
-    background-color: rgb(115, 107, 107);
     border-radius: 15px;
     text-align: center;
    
 }
 
-.image {
-   
-    width: 100%;
-    height: auto;
-  }
-
   .formation_content{
   color: white;
   font-size: 20px;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease;
+  background-color: #111;
    
   }
-  .carousel .slide .formation_content{
+ .slide:hover .formation_content{
+    height: 100%;
+    background-image: none;
+    border-radius:15px ;
+  }
+  
+
+ 
+ 
+
+ /* .carousel .slide .formation_content{
     visibility: hidden;
     opacity: 0;
     transition : 0.3s ease-in-out;
@@ -335,7 +345,37 @@ header{
     visibility: visible;
     opacity: 1;
     transition-delay: 0.2s;
-  }
+  }*/
+
+  .carousel  .slide{
+    position: relative;
+    max-width : 500px;
+    height : 500px;  
+    background: linear-gradient(to left, #5a5454, #161616);
+    margin : 30px 10px;
+    padding : 20px 15px;
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.carousel .slide .image{
+  position : relative;
+  width : 350px;
+  height : 250px;
+  top : -20%;
+  left: 8px;
+  
+}
+
+.carousel .slide .image img{
+    max-width : 80%;
+    border-radius : 15px;
+}
+
+
 
 .container_double{
     border: 1px solid;

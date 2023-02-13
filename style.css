@@ -66,13 +66,15 @@ header{
 .about_me{
     
     width: 80%;
-    height: 400px;
+    height: 500px;
+    margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 75px;
     padding-right: 20px;
     display: flex;
     justify-content: center;   
+    border: 1px solid;
 }
 .about_me_bis h2{
     text-decoration: underline;
@@ -109,7 +111,7 @@ header{
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
-    
+    border: 1px solid;
 }
 .competences h2{
     text-decoration: underline;
@@ -280,7 +282,6 @@ header{
     max-height: 900%;
     height: 550px;
     margin-bottom: 10px;
-    text-align: center;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -309,6 +310,8 @@ header{
     justify-content: center;
     background-color: rgb(115, 107, 107);
     border-radius: 15px;
+    text-align: center;
+   
 }
 
 .image {
@@ -320,11 +323,19 @@ header{
   .formation_content{
   color: white;
   font-size: 20px;
-  transform: translate(-50%, -50%);
   text-align: center;
    
   }
-  
+  .carousel .slide .formation_content{
+    visibility: hidden;
+    opacity: 0;
+    transition : 0.3s ease-in-out;
+  }
+  .carousel .slide:hover .formation_content{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
 
 .container_double{
     border: 1px solid;
@@ -336,6 +347,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 500px;
 }
 .soft-skills{
    
@@ -439,8 +451,7 @@ header{
     
 }
 .interet_losirs{
-   margin-top: 200px;
- 
+    margin-top: 200px;
     width: 80%;
     height: 300px;
     margin-bottom: 10px;
@@ -448,6 +459,7 @@ header{
     text-align: center;
     justify-content: center;
     height: 500px;
+    border: 1px solid;
     
     
 }
@@ -464,6 +476,7 @@ header{
     padding : 30px;  
     width: 80%;
     margin-left: 150px;
+    border: 1px solid;
     
     
 }
@@ -482,6 +495,7 @@ header{
 }
 .loisirs_text .card_loisirs:hover{
     height : 300px;  
+  
 }
 .loisirs_text .card_loisirs .image{
   position : relative;
@@ -498,15 +512,15 @@ header{
 }
 
 .loisirs_text .card_loisirs .content{
-    position : relative;
+  position : relative;
   top : -140px;
   padding : 10px 15px;
   color : #111;
   text-align : center;
-  
   visibility : hidden;
   opacity : 0;
   transition : 0.3s ease-in-out;
+  border: 1px solid;
 }
 .loisirs_text .card_loisirs:hover .content{
     margin-top : 30px;

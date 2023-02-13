@@ -17,7 +17,7 @@ header{
     align-items: center;
     font-family: "PT Sans Narrow";
     width: 100%;
-    background-image: url("https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("img/pexels-photo-1144176.webp");
     max-height: 800px;
     height: 770px;
    
@@ -177,7 +177,7 @@ header{
     margin-left: 30px;
 }
 #html:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png);
+    background-image: url(img/file_type_html_icon_130541.png);
     background-size: cover;
     
 }
@@ -190,7 +190,7 @@ header{
     margin-right: 30px;
 }
 #css:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png);
+    background-image: url(img/file_type_css_icon_130661.png);
     background-size: cover;
 }
 #css::after{
@@ -202,7 +202,7 @@ header{
     margin-right: 30px;
 }
 #javascript:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_plain_logo_icon_146454.png);
+    background-image: url(img/javascript_plain_logo_icon_146454.png);
     background-size: cover;
 }
 #javascript::after{
@@ -214,7 +214,7 @@ header{
     margin-right: 30px;
 }
 #python:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_python_icon_130221.png);
+    background-image: url(img/file_type_python_icon_130221.png);
     background-size: cover;
 }
 #python::after{
@@ -226,7 +226,7 @@ header{
     
 }
 #mysql:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/512/PNG/512/dbs-mysql_icon-icons.com_50909.png);
+    background-image: url(img/dbs-mysql_icon-icons.com_50909.png);
     background-size: cover;
 }
 #mysql::after{
@@ -238,7 +238,7 @@ header{
     margin-right: 25px;
 }
 #c:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2148/PNG/512/c_icon_132529.png);
+    background-image: url(img/c_icon_132529.png);
     background-size: cover;
 }
 #c::after{
@@ -250,7 +250,7 @@ header{
     margin-right: 25px;
 }
 #vs_code:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png);
+    background-image: url(img/file_type_vscode_icon_130084.png);
     background-size: cover;
 }
 #vs_code::after{
@@ -262,7 +262,7 @@ header{
     margin-right: 25px;
 }
 #linux:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/195/PNG/256/OS_Linux_23399.png);
+    background-image: url(img/OS_Linux_23399.png);
     background-size: cover;
 }
 #linux::after{
@@ -274,7 +274,7 @@ header{
     margin-right: 25px;
 }
 #office:hover{
-    background-image: url(https://cdn.icon-icons.com/icons2/1826/PNG/512/4202103logomicrosoftmsofficesocialsocialmedia-115585_115716.png);
+    background-image: url(img/4202103logomicrosoftmsofficesocialsocialmedia-115585_115716.png);
     background-size: cover;
 }
 #office::after{

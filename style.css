@@ -41,12 +41,14 @@ header{
     transition: all 0.4s;
 }
 .container{
+    border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
+    
 }
 .about_me_bis{
     border: 50px solid;
@@ -275,17 +277,58 @@ header{
 .formation{
     border: 1px solid;
     width: 80%;
-    height: 300px;
+    max-height: 900%;
+    height: 550px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
 }
 .formation h2{
     text-decoration: underline;
     
 }
-.container_double{
+.carousel{
+   display: flex;
+   flex-direction: row;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   max-width: 80%;
+   border: 1px solid;
+}
+.slide{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 350px;
+    margin-right: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(115, 107, 107);
+    border-radius: 15px;
+}
+
+.image {
+   
+    width: 100%;
+    height: auto;
+  }
+
+  .formation_content{
+  color: white;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+   
+  }
   
+
+.container_double{
+    border: 1px solid;
+    margin-top: 100px;
     width: 80%;
     height: 300px;
     margin-bottom: 10px;
@@ -348,27 +391,53 @@ header{
   
     width: 80%;
     margin-bottom: 10px;
-    text-align: center;
     padding-top: 50px;
+    height: 450px;
+    max-height: 450px;
+   
+}
+.langues_container{
+    display: flex;
+    justify-content: center ;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .langues h2{
     text-decoration: underline;
     
 }
-.langue_text{
-    margin-left: 15px;
-    padding-left: 0px;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background-color: white;
-    color: #181616;
-    height: 105px;
+.langue_card{
+   display: grid;
+   grid-template-rows: 96px 48px 1fr;
+   grid-template-columns: 1fr;
+   border-radius:20px  ;
+   background: linear-gradient(to left, #5a5454, #252323);
+   cursor: pointer;
+   width: 350px;
+   max-width: 350px;
+   height: 250px;
+   max-height: 300px;
+   box-shadow: 0 5px 10px 0 #161616;
 }
 
+.langue_background{
+    grid-row: 1/3;
+    grid-column: 1 / -1;
+}
+.langue_background img{
+    width: 100%;
+    height:100% ;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: #111 solid;
+}
+.langue_content{
+    grid-row: 3 / 5;
+    grid-column: 1 / -1;
+    padding: 0px;
+    color: #ffffff;
+    
+}
 .interet_losirs{
    margin-top: 200px;
  

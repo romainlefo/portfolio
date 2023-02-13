@@ -18,6 +18,8 @@ header{
     font-family: "PT Sans Narrow";
     width: 100%;
     background-image: url("img/pexels-photo-1144176.webp");
+    width: 100%;
+    background-repeat:no-repeat;
     max-height: 800px;
     height: 770px;
    

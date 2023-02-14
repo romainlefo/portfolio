@@ -18,10 +18,9 @@ header{
     font-family: "PT Sans Narrow";
     width: 100%;
     background-image: url("img/pexels-photo-1144176.webp");
-    width: 100%;
     background-repeat:no-repeat;
     max-height: 800px;
-    height: 770px;
+   max-height: 770px;
    
 }
 
@@ -51,6 +50,7 @@ header{
     margin-bottom: 10px;
     align-items: center;
     font-size: 16px;
+    font-family: "Roboto";
 }
 .about_me_bis{
     border: 50px solid;
@@ -93,6 +93,10 @@ header{
     text-align: justify;
     justify-content: space-between;
     
+}
+.main p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #img_me{
@@ -174,7 +178,7 @@ header{
     justify-content: center;
 }
 #html{
-    color: #ea71537f    ;
+    color: #eb3e13a0    ;
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -186,10 +190,12 @@ header{
 #html::after{
     content: 'HTML';
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #css{
-    color: #69a7da7d;
+    color: #54a4e67d;
     margin-right: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #css:hover{
     background-image: url(img/file_type_css_icon_130661.png);
@@ -200,8 +206,9 @@ header{
     color: white;
 }
 #javascript{
-    color: #f1cf0e61;
+    color: #f1cf0e93;
     margin-right: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #javascript:hover{
     background-image: url(img/javascript_plain_logo_icon_146454.png);
@@ -210,10 +217,12 @@ header{
 #javascript::after{
     content: 'JavaScript';
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #python{
-    color: #919e633c;
+    color: #a1b7537e;
     margin-right: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #python:hover{
     background-image: url(img/file_type_python_icon_130221.png);
@@ -224,7 +233,8 @@ header{
     color: white;
 }
 #mysql{
-    color: #37c2ad4c;
+    color: #37c2ad7f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 #mysql:hover{
@@ -236,8 +246,9 @@ header{
     color: white;
 }
 #c{
-    color: #8a1eb551;
+    color: #8a1eb58a;
     margin-right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #c:hover{
     background-image: url(img/c_icon_132529.png);
@@ -248,8 +259,9 @@ header{
     color: white;
 }
 #vs_code{
-    color: #4e1eb551;
+    color: #4e1eb589;
     margin-right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #vs_code:hover{
     background-image: url(img/file_type_vscode_icon_130084.png);
@@ -260,8 +272,9 @@ header{
     color: white;
 }
 #linux{
-    color: #47471751;
+    color: #95952299;
     margin-right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #linux:hover{
     background-image: url(img/OS_Linux_23399.png);
@@ -272,8 +285,9 @@ header{
     color: white;
 }
 #office{
-    color: #926c1c51;
+    color: #bf8b1c90;
     margin-right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #office:hover{
     background-image: url(img/4202103logomicrosoftmsofficesocialsocialmedia-115585_115716.png);
@@ -302,7 +316,7 @@ header{
 }
 .carousel{
     padding-top: 100px;
-    height: 550px;
+    height: 650px;
     max-height: 1000px;
     position: relative;
    display: flex;
@@ -317,22 +331,18 @@ header{
 
   .formation_content{
   color: white;
- 
   text-align: center;
-  overflow: hidden;
   width: 100%;
-  height: 0%;
-  transition: 0.5s ease;
-  background-color: #111;
- 
+  height: 100%;
   }
- .slide:hover .formation_content{
+
+/*.slide:hover .formation_content{
     height: 350px;
     max-height: 400px;
     background-image: none;
     border-radius:15px ;
     
-  }
+  }*/
   
 
  
@@ -354,7 +364,7 @@ header{
     position: relative;
     width: 700px;
     max-width: 700px;
-    height : 200px;  
+    height : 500px;  
     max-height: 770px;
     background: linear-gradient(to left, #5a5454, #161616);
     margin : 30px 10px;
@@ -367,9 +377,7 @@ header{
     flex-shrink: 0;
     scroll-snap-align: start;
 }
-.slide:hover{
-    height: 450px;
-}
+
 
 .carousel .slide .image{
   position : relative;
@@ -386,7 +394,10 @@ header{
     border-radius : 15px;
 }
 
-
+.formation_content p{
+    text-decoration: underline;
+    font-size: 20px;
+}
 
 .container_double{
     margin-top: 100px;
@@ -432,9 +443,9 @@ header{
 }
 
 .card_soft{
-    width: 290px;
-    height: 250px;
-    max-width: 300px;
+    width: 350px;
+    height: 200px;
+    max-width: 350px;
     max-height: 350px;
     background: linear-gradient(to left, #5a5454, #252323);
     border-radius: 10px;
@@ -482,7 +493,7 @@ header{
    cursor: pointer;
    width: 200px;
    max-width: 350px;
-   height: 250px;
+   height: 280px;
    max-height: 300px;
    box-shadow: 0 5px 10px 0 #161616;
 }
@@ -600,7 +611,7 @@ nav{
     justify-content: space-around;
     text-align: center;
     padding-top: 23px;
-    height: 35px;
+    height: 100%;
     max-height: 35px;
     position: sticky;
     top:0%;

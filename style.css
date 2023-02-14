@@ -16,11 +16,11 @@ header{
     justify-content: center;
     align-items: center;
     font-family: "PT Sans Narrow";
-    width: 100%;
+    width:100%;
     background-image: url("img/pexels-photo-1144176.webp");
     background-repeat:no-repeat;
     max-height: 800px;
-   max-height: 770px;
+    height: 700px;
    
 }
 
